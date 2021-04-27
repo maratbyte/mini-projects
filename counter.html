@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+        <p id="counter"></p>
+        <button id="inc">+</button>
+        <button id="dec">-</button>
+
+        <script>
+            // initial value of the counter
+            let value = 0;
+
+            // finding elements by IDs and bindning them to variables
+            let counter = document.getElementById("counter");
+            let increment = document.getElementById("inc");
+            let decrement = document.getElementById("dec");
+
+            // setting initial value to the counter element
+            counter.innerHTML = value;
+
+            // functions that are called once buttons get clicked, that increment or decrement the value and update the counter element
+            increment.onclick = () => {
+                value++;
+                counter.innerHTML = value;
+            };
+            decrement.onclick = () => {
+                value--;
+                counter.innerHTML = value;
+            };
+            
+        </script>
+    </body>
+</html>
