@@ -2,11 +2,50 @@
 <html>
     <head>
         <title>Counter</title>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            .container {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #counter {
+                font-size: 200px;
+                font-family: monospace;
+                color: white;
+                margin: 0;
+            }
+
+            button {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: yellow;
+                font-size: 50px;
+                border: 1px solid black;
+                padding-bottom: 5px;
+                margin: 10px;
+            }
+
+            button:hover {
+                background-color: red;
+            }
+        </style>
     </head>
     <body>
-        <p id="counter"></p>
-        <button id="inc">+</button>
-        <button id="dec">-</button>
+        <div class="container">
+            <p id="counter"></p>
+            <div>
+                <button id="inc">+</button>
+                <button id="dec">-</button>
+            </div>
+        </div>
 
         <script>
             // initial value of the counter
