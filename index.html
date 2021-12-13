@@ -1,74 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Counter</title>
-        <style>
-            body {
-                background-color: black;
-            }
+<html lang="en">
 
-            .container {
-                display: flex;
-                height: 100vh;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
 
-            #counter {
-                font-size: 200px;
-                font-family: monospace;
-                color: white;
-                margin: 0;
-            }
+<body>
+    <span id="counter">0</span>
+    <div>
+        <button id="plus">
+            <span>+</span>
+        </button>
+        <button id="minus">
+            <span>-</span>
+        </button>
+    </div>
 
-            button {
-                height: 80px;
-                width: 80px;
-                border-radius: 50%;
-                background-color: yellow;
-                font-size: 50px;
-                border: 1px solid black;
-                padding-bottom: 5px;
-                margin: 10px;
-            }
+    <script src="counter.js"></script>
+</body>
 
-            button:hover {
-                background-color: red;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <p id="counter"></p>
-            <div>
-                <button id="inc">+</button>
-                <button id="dec">-</button>
-            </div>
-        </div>
-
-        <script>
-            // initial value of the counter
-            let value = 0;
-
-            // finding elements by IDs and bindning them to variables
-            let counter = document.getElementById("counter");
-            let increment = document.getElementById("inc");
-            let decrement = document.getElementById("dec");
-
-            // setting initial value to the counter element
-            counter.innerHTML = value;
-
-            // functions that are called once buttons get clicked, that increment or decrement the value and update the counter element
-            increment.onclick = () => {
-                value++;
-                counter.innerHTML = value;
-            };
-            decrement.onclick = () => {
-                value--;
-                counter.innerHTML = value;
-            };
-            
-        </script>
-    </body>
 </html>

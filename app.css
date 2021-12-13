@@ -1,0 +1,195 @@
+ /* RESET */
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol,
+ ul {
+     list-style: none;
+ }
+
+ blockquote,
+ q {
+     quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+
+ /* MAIN STYLES */
+ body {
+     background-color: #ffffff;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #counter {
+     color: #14213d;
+     font-size: 200px;
+     font-family: 'Bakbak One', cursive;
+ }
+
+ button {
+     font-family: 'Bakbak One', cursive;
+     border: none;
+     border-radius: 50%;
+     background-color: #2EE59D;
+     color: #fff;
+     font-size: 60px;
+     height: 70px;
+     width: 70px;
+     margin: 10px;
+     transition: all 0.1s linear;
+     cursor: pointer;
+     outline: none;
+ }
+
+ #plus span {
+     position: relative;
+     bottom: 7px;
+ }
+
+ #minus span {
+     position: relative;
+     bottom: 12px;
+ }
+
+ button:hover {
+     transform: scale(1.1);
+     background-color: #00ff99;
+ }
+
+ button:active {
+     transform: scale(1);
+ }
+
+button.animated {
+    animation: pulse 0.8s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #00ff99;
+    }
+    100% {
+        box-shadow: 0 0 5px 20px #00ff9900;
+    }
+}
